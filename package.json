@@ -1,0 +1,17 @@
+{
+  "name": "batch-eth-wallet-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bip39": "^2.5.0",
+    "ethereum-hdwallet": "0.0.18",
+    "fs-extra": "^7.0.0",
+    "json2csv": "^4.2.1"
+  }
+}
