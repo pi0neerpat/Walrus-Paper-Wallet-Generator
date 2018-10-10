@@ -6,11 +6,15 @@ Generates a large number of paper wallets, e.g., for an in-person giveaway.
 
 ## About
 
-Paper wallets are an easy way to drive adoption since they introduce the concept of public/private keys, while still _feeling like_ physical, fiat currency. This tool is designed to aid in printing hundreds or thousands of paper wallets on standard business cards.
+Paper wallets are an **easy way to drive adoption** since they introduce the concept of public/private keys, while still _feeling like_ physical, fiat currency. This tool is designed to aid in printing hundreds or thousands of paper wallets on standard business cards.
+
+| index | mnemonic                    | public address | private key |
+| ----- | --------------------------- | -------------- | ----------- |
+| 1     | push loan mammal plastic... | 0xabc123...    | 0x952d81a4  |
 
 ## Features
 
-- Generates a .csv file with the mnemonic seed, public and private keys for 1,000 wallets (or more).
+- Generates a .csv file with the mnemonic seed, public and private keys for many wallets.
 
 ## Future plans
 
@@ -18,3 +22,7 @@ Paper wallets are an easy way to drive adoption since they introduce the concept
 - Business-card templates
 - Auto-populate labels with mnemonic phrase using Microsoft Word mail merge
 - QR code for recovery (note: Status and Coinbase mobile wallets do not currently allow QR-code recovery.)
+
+## Contact
+
+[Patrick](https://twitter.com/pi0neerpat)
