@@ -1,6 +1,6 @@
-<img alt="walrus" src="readme-resources/walrus.png" align="left" width="150">
+<p align="center"><img alt="walrus" src="readme-resources/walrus.png"  width="150"></p>
 
-<h1 align="center"> Walrus Paper Wallet Generator <img alt="wallet" src="readme-resources/wallet.png" align="middle" width="60"></h1>
+<h1 align="center"> Walrus Paper Wallet Generator </h1>
 </p>
 
 <p align="center"><img alt="single-card" src="readme-resources/single-card.png" align="middle" width='400' >
@@ -14,16 +14,18 @@ Generate and fund hundreds of paper wallets, for a workshop or in-person giveawa
 
 Paper wallets are an **easy way to drive adoption** :rocket: since they introduce cryptography, while still _feeling like_ physical, fiat currency. These resources are designed to create and print hundreds of paper wallets on standard business cards.
 
+Read the Medium article on [key wallet concepts for blockchain education](https://medium.com/@pi0neerpat/walrus-paper-wallet-5c39b89c9e22).
+
 ## Features
 :white_check_mark: Quickly generate a **.csv**  file with the mnemonic seed, public and private keys for many wallets.:zap:
 
-:white_check_mark: Business-card templates  :clipboard:
+:white_check_mark: Business-card template  :clipboard:
 
 :white_check_mark: Auto-populate labels with mnemonic phrase using Word mail merge  :mailbox_with_mail:  :arrow_right:
 
 :white_check_mark: QR addresses :camera:
 
-:white_check_mark: Suggested directions for setting up a mobile wallet
+:white_check_mark: Directions for users
 
 ## Instructions
 
@@ -53,7 +55,7 @@ node generateWallets.js
 
 This is a good time to mention that many new cryptography users and developers struggle with the concept that a blockchain wallet does not "contain" any tokens or funds. Its merely a text file that is used to sign messages. Consider using an icon like this <img alt="wallet" src="readme-resources/wallet.png" align="middle" width="35"> to describe the concept visually.
 
-### Step 2. Create cards in Word using Mail-Merge
+### Step 2. Create business-cards in Word using Mail-Merge
 
 I've included an example of my mail-merge fields in `wallets.docx`. Feel free to create your own template.
 
@@ -62,19 +64,25 @@ Note: I highly recommend you include the **index** on each card, to help during 
 <p align="center"><img alt="merge-fields" src="readme-resources/merge-fields.png" align="middle" width='800' >
 </p>
 
-#### QR :camera: Codes
+#### :camera: QR Codes
 
-I've spared you from installing spamware plugins to help you generate QR codes in Word. Use the following mail-merge code.
+I've spared you from installing spyware-riddled plugins to help you generate QR codes in Word. Just use the following mail-merge code.
 ```js
 {DSPLAYBARCODE "{MERGEFIELD publicAddressQRString}" QR \* MERGEFORMAT \s 55}
 ```
 Change the size by editing the number at the end.
 
-#### Directions  for Users  :clipboard:  
+#### :clipboard: Directions  for Users  
 
-XXXXXXXXXXXXXXXXXXXX
+Here is an example from a in-person event, where users are exchanging tokens via a mobile browser.
 
-#### Printing can be a nightmare  :see_no_evil: :anger:
+XXXXXXXXX
+
+Note: CoinBase wallet on iOS does not currently support starting a *new* wallet from 12-word phrase. Try [Enjin](https://itunes.apple.com/us/app/enjin-cryptocurrency-wallet/id1349078375).
+
+For in-person workshops, I do not include any instructions.
+
+#### :see_no_evil: Printing can be a nightmare  
 
 Here's what I learned:
 
@@ -124,7 +132,7 @@ Add square brackets and remove the last comma. It should look like this:
 
 Now you have a properly formatted argument to call the `multiSendETH` function in the `batch.sol` contract.
 
-Deploy `batch.sol` contract on the appropriate network using [Remix IDE](http://remix.ethereum.org). Next, call the `multiSendETH` function using the arguments you just created.
+Deploy the `batch.sol` contract on the appropriate network using [Remix IDE](http://remix.ethereum.org). Next, call the `multiSendETH` function using the arguments you just created.
 
 I'll leave the `multiSendToken` function as a challenge for you to solve. Good luck!
 
@@ -133,5 +141,7 @@ I'll leave the `multiSendToken` function as a challenge for you to solve. Good l
 
  :globe_with_meridians: :loudspeaker: :moneybag: :gift:  :chart_with_upwards_trend:
 
- ## Did you find this useful?  <iframe src="https://ghbtns.com/github-btn.html?user=blockchainbuddha&type=follow&count=true&size=large" frameborder="0" scrolling="0" width="220px" height="30px"></iframe>
-Contact me on twitter: [Pi0neerPat](https://twitter.com/pi0neerpat)
+ ---------------------------------
+ ## Did you find this useful?  Give this repo a :star:
+
+Connect with me on twitter: [Pi0neerPat](https://twitter.com/pi0neerpat)
