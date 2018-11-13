@@ -57,7 +57,7 @@ This is a good time to mention that many new cryptography users and developers s
 
 ### Step 2. Create business-cards in Word using Mail-Merge
 
-I've included an example of my mail-merge fields in `wallets.docx`. Feel free to create your own template.
+I've included an example of my mail-merge fields in `wallets.docx`. To import your wallet data, open "Mailings" in the ribbon, then "Select Recipients" and select the file `wallets.csv`.  Use this [wiki-how tutorial](https://www.wikihow.com/Mail-Merge-in-Microsoft-Word) if you need help. Feel free to create your own template.
 
 Note: I highly recommend you include the **index** on each card, to help during printing, funding, and distribution.
 
