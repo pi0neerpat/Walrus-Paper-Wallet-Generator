@@ -3,12 +3,12 @@
 <h1 align="center"> Walrus Paper Wallet Generator </h1>
 </p>
 
-<p align="center"><img alt="single-card" src="readme-resources/single-card.png" align="middle" width='400' >
-</p>
-
 Generate and fund hundreds of paper wallets, for a workshop or in-person giveaway :globe_with_meridians: :loudspeaker: :moneybag: :gift:  :chart_with_upwards_trend:
 
 > :warning: Warning! Do not use for high-security needs. You should not assume cryptographic security.
+
+<p align="center"><img alt="single-card" src="readme-resources/single-card.png" align="middle" width='400' >
+</p>
 
 ## About
 
@@ -74,9 +74,9 @@ Change the size by editing the number at the end.
 
 #### :clipboard: Directions  for Users  
 
-Here is an example from a in-person event, where users are exchanging tokens via a mobile browser.
+Here is an example from a in-person event, with users importing their paper wallet into a mobile wallet to exchange.
 
-XXXXXXXXX
+<p align="center"><img alt="token-card" src="readme-resources/token-card.png" width='600' ></p>
 
 Note: CoinBase wallet on iOS does not currently support starting a *new* wallet from 12-word phrase. Try [Enjin](https://itunes.apple.com/us/app/enjin-cryptocurrency-wallet/id1349078375).
 
@@ -132,9 +132,11 @@ Add square brackets and remove the last comma. It should look like this:
 
 Now you have a properly formatted argument to call the `multiSendETH` function in the `batch.sol` contract.
 
-Deploy the `batch.sol` contract on the appropriate network using [Remix IDE](http://remix.ethereum.org). Next, call the `multiSendETH` function using the arguments you just created.
+> Note, keep in mind there is a global gas limit for transactions. Try breaking addresses up into batches of 100 if you run into problems.
 
-I'll leave the `multiSendToken` function as a challenge for you to solve. Good luck!
+Deploy the `batch.sol` contract on the appropriate network using [Remix IDE](http://remix.ethereum.org). Next, call the `multiSendETH` function using the arguments you just created, along with the desired ETH value to split.
+
+I'll leave the `multiSendToken` function for you to solve on your own. Good luck!
 
 
 ### Step 4. Hand them out and have fun!
